@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate_tsConfig": "tsc --init",
+    "generate:tsconfig": "tsc --init",
+    "generate:eslintrc": "eslint --init",
+    "lint": "eslint",
     "start": "",
     "clean": "rm -rf dist",
     "build:prod": "webpack --config webpack.config.js --output-public-path './' --mode=production",
